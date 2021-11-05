@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Css 3D transformations</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
+    rel="stylesheet" />
+  <!-- Internel CSS -->
+  <style>
+    .MainContainer {
+      height: 70%;
+      width: 70%;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .propertyTitle {
+      text-align: center;
+      color: #152238;
+      font-family: "Lobster", cursive;
+      font-family: "Merriweather", serif;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+    }
+
+    .propertyWord {
+      color: #25b7d3;
+      font-family: "Lobster", cursive;
+      font-family: "Merriweather", serif;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+    }
+
+    p {
+      font-size: 23px;
+    }
+
+    code {
+      background-color: #eee;
+      height: 200px;
+      width: 200px;
+    }
+
+    .propertyRealExample {
+      perspective: 900px;
+    }
+    /* Rotate */
+    .rotateDiv {
+      height: 200px;
+      width: 200px;
+      transition-duration: 1s;
+      background-color: #25b7d3;
+      color: white;
+      border-radius: 9px;
+      text-align: center;
+    }
+
+    .rotateDiv:hover {
+      box-shadow: 2px 2px 30px #152238;
+      transform: rotateY(180deg)
+    }
+
+    /* Scale */
+    .scaleDiv {
+      height: 200px;
+      width: 200px;
+      transition-duration: 1s;
+      background-color: #152238;
+      color: white;
+      border-radius: 9px;
+      text-align: center;
+    }
+
+    .scaleDiv:hover {
+      box-shadow: 2px 2px 30px #25b7d3;
+      transform: scale3d(2, 0.7, 0.2);
+    }
+
+    /* Translate */
+    .translateDiv {
+      height: 200px;
+      width: 200px;
+      transition-duration: 1s;
+      background-color: #152238;
+      color: white;
+      border-radius: 9px;
+      text-align: center;
+    }
+
+    .translateDiv:hover {
+      box-shadow: 2px 2px 30px blue;
+      transform: translate3d(10px,10px,90px) rotateZ(30deg);
+    }
+
+    /* Source Code Divs modifications */
+    .flex-container  {
+     display: flex;
+    }
+    .flex-container > div {
+     width: 32.3%;
+     color: white;
+     background-color: #152238;
+     margin-left: 1%;
+     border-radius: 15px;
+     padding: 5px;
+     box-shadow: 2px 2px 30px #25b7d3;
+      
+    }
+    .flex-container code {
+     background-color: transparent;
+     font-weight: 50;
+      
+    }
+/* width of each div is 32.3 because 3 elements divided by 100% gives 33.3, 1% is for margin given by inline block */
+    
+   
+
+  </style>
+</head>
+
+<body>
+  <div class="MainContainer">
+    <h1 class="propertyTitle">CSS 3D transformations</h1>
+    <hr />
+    <div class="propertyDescription">
+      <h1><span class="propertyWord">Property</span> Description:</h1>
+      <p>
+        - CSS also supports 3D transformations.
+        <br>
+        In this chapter you will learn about the following CSS property:
+      <ul>
+        <li><code style="color: red;">transform</code></li>
+
+        <ul>
+          <li>transform with 3D needs the following proprties to inhance the 3D look:</li>
+          <ul>
+          <li><b>perspective => To activate 3D space, an element needs perspective.</b></li>
+          <li>rotate3D</li>
+          <li>scale3D</li>
+          <li>translate3D</li>
+          <li>rotateX, rotateY, rotateZ</li>
+          <li>scaleY, scaleX, scaleZ</li>
+          <li>translateX, translateY, translateZ</li>
+        </ul>
+        </ul>
+
+      </ul>
+      - When we say 3D we mean by that moving in three directions <b>x-axis</b> and <b>y-axis</b> and <b style="text-decoration: underline;">z-axis</b>
+      </p>
+
+      </ul>
+    </div>
+
+    <div class="propertyRealExample">
+      <h1><span class="propertyWord">Property</span> Live Example:</h1>
+      <!-- Rotating -->
+      <h2>- Rotating:</h2>
+      <p>Note: Please Hover to Rotate the element.</p>
+      </h5>
+      <div class="rotateDiv">
+        hover me :)
+      </div>
+      <!-- Scaling -->
+      <h2>- Scaling:</h2>
+      <p>Note: Please Hover to Scale the element.</p>
+      </h5>
+      <div class="scaleDiv">
+        hover me :)
+      </div>
+
+      <!-- Translate -->
+      <h2>- Translate:</h2>
+      <p>Note: Please Hover to Translate the element.</p>
+      </h5>
+      <div class="translateDiv">
+        hover me :)
+      </div>
+    </div>
+
+    <div class="propertySourceCode">
+      <h1><span class="propertyWord">Property</span> Source Code:</h1>
+      <!-- Rotating Div  -->
+      <div class="flex-container">
+      <div class="rotateSourceCodeDiv">
+        <h3>- <span style="color: #25b7d3;">Rotating</span> Source Code:</h3>
+        <code>
+          .rotateDiv {<br>
+            height: 200px;<br>
+            width: 200px;<br>
+            transition-duration: 1s;<br>
+            background-color: #25b7d3;<br>
+            color: white;<br>
+            border-radius: 9px;<br>
+            text-align: center;<br>
+          }<br>
+      
+          .rotateDiv:hover {<br>
+            box-shadow: 2px 2px 30px #152238;<br>
+            transform: rotateY(180deg)<br>
+          }<br>
+        </code>
+      </div>
+      <!-- Scaling Div -->
+      <div class="scaleSourceCodeDiv">
+        <h3>- <span style="color: #25b7d3;">Scaling</span> Source Code:</h3>
+        <code>
+          .scaleDiv {<br>
+            height: 200px;<br>
+            width: 200px;<br>
+            transition-duration: 1s;<br>
+            background-color: #152238;<br>
+            color: white;<br>
+            border-radius: 9px;<br>
+            text-align: center;<br>
+          }<br>
+      
+          .scaleDiv:hover {<br>
+            box-shadow: 2px 2px 30px #25b7d3;<br>
+            transform: scale3d(2, 0.7, 0.2);<br>
+          }
+        </code>
+      </div>
+      <!-- Translate Div -->
+      <div class="translateSourceCodeDiv">
+        <h3>- <span style="color: #25b7d3;">Translate</span> Source Code:</h3>
+        <code>
+          .translateDiv {<br>
+            height: 200px;<br>
+            width: 200px;<br>
+            transition-duration: 1s;<br>
+            background-color: #152238;<br>
+            color: white;<br>
+            border-radius: 9px;<br>
+            text-align: center;<br>
+          }<br>
+      
+          .translateDiv:hover {<br>
+            box-shadow: 2px 2px 30px blue;<br>
+            transform: translate3d(10px,10px,90px) rotateZ(30deg);<br>
+          }
+        </code>
+      </div>
+      </div>
+
+    </div>
+  </div>
+</body>
+
+</html>

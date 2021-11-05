@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Background Gradients</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Internel CSS -->
+    <style>
+
+      .MainContainer {
+        height: 70%;
+        width: 70%;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: white;
+      }
+      .propertyTitle {
+        text-align: center;
+        color: #152238;
+        font-family: "Lobster", cursive;
+        font-family: "Merriweather", serif;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .propertyWord {
+        color: #25b7d3;
+        font-family: "Lobster", cursive;
+        font-family: "Merriweather", serif;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+
+      .cssGradient {
+        width: 900px;
+        height: 400px;
+        background-color: #eee;
+        margin: 20px auto;
+        position: relative;
+        padding:10px;
+        font-weight: bold;
+        text-align: center;
+      }
+      .cssGradient::before {
+        height: 10px;
+        content: "";
+        position: absolute;
+        top: -10px;
+        left: 0;
+        width:100%;
+        /* background-color: rebeccapurple; */
+        background-image: linear-gradient(
+          to right,
+          white,
+          rebeccapurple,
+          purple,
+          darkred,
+          red,
+          rgba(0, 0, 139, 0.212)
+
+        );
+      }
+      p {
+        font-size: 23px;
+      }
+      code {
+          background-color: #eee;
+          height: 200px;
+          width: 200px;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <div class="MainContainer">
+      <h1 class="propertyTitle">CSS Background Gradients</h1>
+      <hr />
+      <div class="propertyDescription">
+        <h1><span class="propertyWord">Property</span> Description:</h1>
+        <p>
+          CSS gradients let you display smooth transitions between two or more specified colors.
+
+          CSS defines three types of gradients:<br>
+          
+          - Linear Gradients (goes down/up/left/right/diagonally)<br>
+          - Radial Gradients (defined by their center)<br>
+          - Conic Gradients (rotated around a center point)<br>
+          <b>in the most use cases the linear gradients is used to create a color gradients</b>
+        </p>
+      </div>
+
+      <div class="propertyRealExample">
+        <h1><span class="propertyWord">Property</span> Live Example:</h1>
+        
+        <div class="cssGradient">
+          Ahmed Hamid Taha Al-Doori
+        </div>
+
+      </div>
+
+      <div class="propertySourceCode">
+        <h1><span class="propertyWord">Property</span> Source Code:</h1>
+        <h3>Linear Gradient CSS source code using div with a class:</h3>
+        <h5>Here we used the pesudo element before to create something like a div.<br>
+        Before the start of the Orginal div and we applied to the pseudo element the gardients:</h5>
+        <code>.cssGradient {<br>
+          width: 900px;<br>
+          height: 400px;<br>
+          background-color: #eee;<br>
+          margin: 20px auto;<br>
+          position: relative;<br>
+          padding:10px;<br>
+          font-weight: bold;<br>
+          text-align: center;<br>
+        }<br>
+        .cssGradient::before {<br>
+          height: 10px;<br>
+          content: "";<br>
+          position: absolute;<br>
+          top: -10px;<br>
+          left: 0;<br>
+          width:100%;<br>
+          /* background-color: rebeccapurple; */<br>
+          background-image: linear-gradient(<br>
+            to right,<br>
+            white,<br>
+            rebeccapurple,<br>
+            purple,<br>
+            darkred,<br>
+            red,<br>
+            rgba(0, 0, 139, 0.212)<br>
+          );
+        }</code>
+      </div>
+    </div>
+  </body>
+</html>

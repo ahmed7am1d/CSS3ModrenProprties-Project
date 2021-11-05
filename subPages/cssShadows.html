@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Shadows</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Internel CSS -->
+    <style>
+      .MainContainer {
+        height: 70%;
+        width: 70%;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: white;
+      }
+      .propertyTitle {
+        text-align: center;
+        color: #152238;
+        font-family: "Lobster", cursive;
+        font-family: "Merriweather", serif;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .propertyWord {
+        color: #25b7d3;
+        font-family: "Lobster", cursive;
+        font-family: "Merriweather", serif;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+
+      p {
+        font-size: 23px;
+      }
+      code {
+        background-color: #eee;
+        height: 200px;
+        width: 200px;
+      }
+      
+      .textShadow {
+        font-size: 30px;
+        text-shadow: 2px 4px 2px #25b7d3;
+        background-color: #152238;
+        color: white;
+        width: fit-content;
+        margin: 30px auto;
+      }
+
+      .boxShadow {
+        height: 300px;
+        width: 300px;
+        background-color: #152238;
+        color: white;
+        border-radius: 20px;
+        text-align: center;
+        box-shadow: 10px 10px 9px #25b7d3,-10px -10px 9px #25b7d3;
+        margin: 30px auto;
+      }
+
+    </style>
+  </head>
+  <body>
+    <div class="MainContainer">
+      <h1 class="propertyTitle">CSS Shadows</h1>
+      <hr />
+      <div class="propertyDescription">
+        <h1><span class="propertyWord">Property</span> Description:</h1>
+        <p>
+          With CSS you can add shadow to text and to elements. In these chapters
+          you will learn about the following properties:
+          <ol>
+            <li><code style="color: red;">text-shadow</code></li>
+            <li><code style="color: red;">box-shadow</code></li>
+          </ol>
+        </p> 
+      </div>
+
+      <div class="propertyRealExample">
+        <h1><span class="propertyWord">Property</span> Live Example:</h1>
+        <h2>1- text-shadow Property:</h2>
+        <div class="textShadow">
+          <span>Tomas Bata University</span>
+        </div>
+        
+        <h2>2- box-shadow Property:</h2>
+        <p>In box-shadow we can apply the shadow from inside or from outside.<br>
+        for inside we should specify the Keyword <b><i>inset</i></b> in the box-shadow property, for outside we can leave it without specifiying.<br>
+        Also we can apply the shadow as much as we want, i.e dupplicating the shadow value that is given to proprety such as: 
+        <br><code>box-shadow: 10px 10px 9px #25b7d3,-10px -10px 9px #25b7d3;</code>
+      </p>
+
+        <div class="boxShadow">
+          WWWW Technologies.
+        </div>
+      </div>
+
+      <div class="propertySourceCode">
+        <h1><span class="propertyWord">Property</span> Source Code:</h1>
+        <h3>Text and Box shadow using div with a class:</h3>
+        <h5>
+          Note: Here we used the outset boxShaodw.
+        </h5>
+
+        <code>
+          .textShadow {<br>
+        font-size: 30px;<br>
+        text-shadow: 2px 4px 2px #25b7d3;<br>
+        background-color: #152238;<br>
+        color: white;<br>
+        width: fit-content;<br>
+      }<br>
+      .boxShadow {<br>
+        height: 300px;<br>
+        width: 300px;<br>
+        background-color: #152238;<br>
+        color: white;<br>
+        border-radius: 20px;<br>
+        text-align: center;<br>
+        box-shadow: 10px 10px 9px #25b7d3,-10px -10px 9px #25b7d3;<br>
+      }
+
+        </code>
+
+
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Css Transitions</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
+    rel="stylesheet" />
+  <!-- Internel CSS -->
+  <style>
+    .MainContainer {
+      height: 70%;
+      width: 70%;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .propertyTitle {
+      text-align: center;
+      color: #152238;
+      font-family: "Lobster", cursive;
+      font-family: "Merriweather", serif;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+    }
+
+    .propertyWord {
+      color: #25b7d3;
+      font-family: "Lobster", cursive;
+      font-family: "Merriweather", serif;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+    }
+
+    p {
+      font-size: 23px;
+    }
+
+    code {
+      background-color: #eee;
+      height: 200px;
+      width: 200px;
+    }
+
+
+    .transitionBox {
+      height: 300px;
+      width: 300px;
+      background-color: #152238;
+      color: white;
+      border-radius: 20px;
+      text-align: center;
+      box-shadow: 10px 10px 9px #25b7d3, -10px -10px 9px #25b7d3;
+      margin: 30px auto;
+      transition-duration: 2s;
+      transition-delay: 0.5s;
+      transition-property: transform;
+      transition-timing-function: ease-in-out;
+    }
+    .transitionBox:hover {
+      transform: scale(1.5,1.5);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="MainContainer">
+    <h1 class="propertyTitle">CSS Transitions</h1>
+    <hr />
+    <div class="propertyDescription">
+      <h1><span class="propertyWord">Property</span> Description:</h1>
+      <p>
+        CSS transitions allows you to change property values smoothly, over a given duration.
+        you will learn about the following properties:
+      <ul style="list-style:square;">
+
+        <li>
+          <code style="color: red;">transition</code>
+          <ul>
+            <li>giving value directly to transition will automatically assign values to the below proprties such as:<br>
+              transition: margin-right 2s ease-in-out .5s;<br>
+              /* property name | duration | easing function | delay */<br>
+              transition: margin-right 4s ease-in-out 1s;
+              <br>
+              /* Apply to 2 properties */<br>
+              transition: margin-right 4s, color 1s;</li>
+          </ul>
+        </li>
+        <li><code style="color: red;">transition-delay</code>
+          <ul>
+            <li>transition delay specify when the transition should start after which period of time</li>
+          </ul>
+        </li>
+        <li><code style="color: red;">transition-duration</code>
+          <ul>
+            <li>transition duration tells us the gradual time to start changing value of an specified proprety.</li>
+          </ul></li>
+        <li><code style="color: red;">transition-property</code>
+          <ul>
+            <li>trantion property says which property in container of the parent should takes the transition charatrstics.</li>
+          </ul></li>
+        <li><code style="color: red;">transition-timing-function</code>
+          <ul>
+            <li>transition-timing-function, specifies how fast the transition should be applied (at begining or in middle or at the end).</li>
+          </ul></li>
+
+      </ul>
+      </p>
+    </div>
+
+    <div class="propertyRealExample">
+      <h1><span class="propertyWord">Property</span> Live Example:</h1>
+      <h5>
+        Note: Please Hover the element to see the transition effect.
+      </h5>
+      <div class="transitionBox">
+        WWWW Technologies.
+      </div>
+    </div>
+
+    <div class="propertySourceCode">
+      <h1><span class="propertyWord">Property</span> Source Code:</h1>
+      <code>
+        .transitionBox {<br>
+          height: 300px;<br>
+          width: 300px;<br>
+          background-color: #152238;<br>
+          color: white;<br>
+          border-radius: 20px;<br>
+          text-align: center;<br>
+          box-shadow: 10px 10px 9px #25b7d3, -10px -10px 9px #25b7d3;<br>
+          margin: 30px auto;<br>
+          transition-duration: 2s;<br>
+          transition-delay: 0.5s;<br>
+          transition-property: transform;<br>
+          transition-timing-function: ease-in-out;<br>
+        }<br>
+        .transitionBox:hover {<br>
+          transform: scale(1.5,1.5);<br>
+        }
+
+        </code>
+
+
+    </div>
+  </div>
+</body>
+
+</html>

@@ -1,0 +1,201 @@
+body {
+  transition: 2s;
+}
+
+/* Them Button  */
+.themButton {
+  height: 40px;
+  width: 110px;
+  border-radius: 13px;
+  background-color: #152238;
+  margin-left: 94%;
+  overflow: hidden;
+  transition: 2s;
+}
+.themButton img {
+  height: inherit;
+  margin: 1px;
+  transition: 1s;
+}
+
+/*#region Whole container of the page  */
+.MainContainer {
+  height: 1000px;
+  width: 70%;
+  margin: 30px auto;
+  padding: 10px;
+  background-color: white;
+  transition: 2s;
+}
+/*#endregion  */
+
+/*#region header */
+@keyframes headerAnimation {
+  from {
+    top: -200px;
+  }
+  to {
+    top: 0px;
+  }
+}
+header {
+  text-align: center;
+  position: relative;
+  animation-name: headerAnimation;
+  animation-duration: 4.5s;
+}
+
+header h1 {
+  font-family: "Lobster", cursive;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  color: #152238;
+}
+.css3Word {
+  color: #25b7d3;
+}
+
+header p {
+  font-size: 25px;
+  font-family: serif;
+  color: #152238;
+  font-weight: bold;
+}
+
+/*#endregion  */
+
+/*#region articals */
+
+.firstRow {
+  padding: 10px;
+  perspective: 900px;
+}
+.firstRow section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #eee;
+  float: left;
+  margin-left: 1%;
+  height: 20px;
+  transition: 1s;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 2px black;
+  height: 250px;
+  width: 23%;
+  background-color: #152238;
+}
+.firstRow section img {
+  height: 50px;
+  width: 50px;
+  position: relative;
+  left: 80%;
+  bottom: -30%;
+  transition: 0.3s;
+}
+.firstRow section img:hover {
+  opacity: 0.5;
+}
+
+.firstRow section:hover {
+  transform: translate3d(30px, -30px, 250px);
+  box-shadow: 0 0 8px 5px #25b7d3;
+  /* when hovering make the element above all the others */
+  z-index: 99999;
+}
+
+.secondRaw {
+  padding: 10px;
+  perspective: 900px;
+}
+
+.secondRaw section {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: left;
+  background-color: #eee;
+  float: left;
+  margin-left: 1%;
+  transition: 1s;
+  border-radius: 7px;
+  overflow: hidden;
+  box-shadow: 0 0 8px 2px black;
+  height: 250px;
+  width: 23%;
+  background-color: #152238;
+}
+
+.secondRaw section:hover {
+  transform: translate3d(18px, 5px, 300px);
+  box-shadow: 0 0 8px 5px #25b7d3;
+  z-index: 9999;
+}
+.secondRaw section img {
+  height: 50px;
+  width: 50px;
+  margin-left: 70%;
+  margin-top: 30%;
+  transition: 0.5s;
+}
+
+.secondRaw section img:hover {
+  opacity: 0.5;
+}
+
+.clear {
+  clear: both;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+  margin: 6px;
+}
+
+.description {
+  font-size: 15px;
+
+  color: white;
+  margin: 6px;
+}
+
+/*#endregion  */
+
+/*#region animations for the sections or cards  */
+
+@keyframes cardAnimationLeft {
+  from {
+    left: -900px;
+  }
+  to {
+    left: 0px;
+  }
+}
+.cssRoundedCorners,
+.cssBackgroundGradients,
+.css3Dtransformations,
+.cssTransitions {
+  position: relative;
+  animation-name: cardAnimationLeft;
+  animation-duration: 2.5s;
+}
+
+@keyframes cardAnimationRight {
+  from {
+    right: -900px;
+  }
+  to {
+    right: 0px;
+  }
+}
+.cssShadows,
+.css2Dtransformations,
+.cssAnimations,
+.cssColumns {
+  position: relative;
+  animation-name: cardAnimationRight;
+  animation-duration: 2.5s;
+}
+
+/*#endregion  */

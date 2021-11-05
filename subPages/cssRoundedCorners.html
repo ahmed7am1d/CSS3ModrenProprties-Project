@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Css Rounded corners</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Internel CSS -->
+    <style>
+      .MainContainer {
+        height: 70%;
+        width: 70%;
+        margin: 30px auto;
+        padding: 10px;
+        background-color: white;
+      }
+      .propertyTitle {
+        text-align: center;
+        color: #152238;
+        font-family: "Lobster", cursive;
+        font-family: "Merriweather", serif;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      .propertyWord {
+        color: #25b7d3;
+        font-family: "Lobster", cursive;
+        font-family: "Merriweather", serif;
+        font-family: "Yanone Kaffeesatz", sans-serif;
+      }
+      p {
+        font-size: 23px;
+      }
+      .roundedCornerDiv {
+        height: 300px;
+        width: 300px;
+        border-radius: 30px;
+        background-color: #152238;
+        margin:30px auto;
+        color: white;
+        font-weight: bold;
+        text-align: center;
+      }
+
+      code {
+          background-color: #eee;
+          height: 200px;
+          width: 200px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="MainContainer">
+      <h1 class="propertyTitle">CSS Rounded Corners</h1>
+      <hr />
+      <div class="propertyDescription">
+        <h1><span class="propertyWord">Property</span> Description:</h1>
+        <p>
+          The border-radius CSS property rounds the corners of an element's
+          outer border edge. You can set a single radius to make circular
+          corners, or two radii to make elliptical corners.
+          <br />
+          The radius applies to the whole background, even if the element has no
+          border; the exact position of the clipping is defined by the
+          background-clip property. The border-radius property does not apply to
+          table elements when border-collapse is collapse.
+        </p>
+      </div>
+
+      <div class="propertyRealExample">
+        <h1><span class="propertyWord">Property</span> Live Example:</h1>
+        <div class="roundedCornerDiv">Hello :)</div>
+      </div>
+
+      <div class="propertySourceCode">
+        <h1><span class="propertyWord">Property</span> Source Code:</h1>
+        <h3>Div Source code:</h3>
+        <code>
+          normal DIV with a class named roundedCornerDiv. 
+        </code>
+        <h3>Div CSS Source code:</h3>
+        <code>
+          .roundedCornerDiv {
+            height: 300px;<br>
+            width: 300px;<br>
+            border-radius: 30px;<br>
+            background-color: #152238;<br>
+            margin:30px auto;<br>
+            color: white;<br>
+            font-weight: bold;<br>
+            text-align: center;<br>
+          }
+        </code>
+      </div>
+    </div>
+  </body>
+</html>

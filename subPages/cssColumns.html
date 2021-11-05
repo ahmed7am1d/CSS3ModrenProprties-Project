@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Css Multiple Columns</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Lobster&family=Merriweather:ital@1&family=Yanone+Kaffeesatz&display=swap"
+    rel="stylesheet" />
+  <!-- Internel CSS -->
+  <style>
+    .MainContainer {
+      height: 70%;
+      width: 70%;
+      margin: 30px auto;
+      padding: 10px;
+      background-color: white;
+    }
+
+    .propertyTitle {
+      text-align: center;
+      color: #152238;
+      font-family: "Lobster", cursive;
+      font-family: "Merriweather", serif;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+    }
+
+    .propertyWord {
+      color: #25b7d3;
+      font-family: "Lobster", cursive;
+      font-family: "Merriweather", serif;
+      font-family: "Yanone Kaffeesatz", sans-serif;
+    }
+
+    code {
+      background-color: #eee;
+    }
+    .universityNewsPapers {
+      /* short hand accepts only column width and count */
+      columns: 100px 3 ;
+      column-gap: 20px;
+      column-rule: #25b7d3 3px solid;
+      font-family: 'Times New Roman', Times, serif,serif;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="MainContainer">
+    <h1 class="propertyTitle">CSS Multiple Columns</h1>
+    <hr />
+    <div class="propertyDescription">
+      <h1><span class="propertyWord">Property</span> Description:</h1>
+      <p>
+        The CSS multi-column layout allows easy definition of multiple columns of text - just like in newspapers.
+      <ul>
+        <li><code style="color: red;">column-count
+            </code>
+            <ul>
+              <li> This property specifies the number of columns an element(div, p, h ...etc) should be divided into.</li>
+            </ul>
+          </li>
+        <li><code style="color: red;">column-gap
+            </code>
+            <ul>
+              <li>this property specifies the gap between the columns, We can provided in pixles for Example.</li>
+            </ul>
+          </li>
+        <li><code style="color: red;">column-rule-style
+            </code>
+            <ul>
+              <li>this property specifies the style of the rule between columns.</li>
+            </ul>
+          
+          </li>
+        <li><code style="color: red;">column-rule-width
+            </code>
+            <ul>
+              <li>this  property specifies the width of the rule between columns.</li>
+            </ul>
+          </li>
+        <li><code style="color: red;">column-rule-color
+            </code>
+            <ul>
+              <li>this property specifies the color of the rule between columns.</li>
+            </ul>
+          </li>
+        <li><code style="color: red;">column-rule</code>
+
+          <ul>
+            <li>The column-rule property is a shorthand property for setting all the column-rule-* properties above.
+            </li>
+          </ul>
+        </li>
+        <li><code style="color: red;">column-span
+            </code>
+            <ul>
+              <li>The column-span property specifies how many columns an element should span across.
+              </li>
+            </ul></li>
+        <li><code style="color: red;">column-width
+            </code>
+            <ul>
+              <li>this property specifies a suggested, optimal width for the columns.</li>
+            </ul></li>
+      </ul>
+
+      </p>
+    </div>
+
+    <div class="propertyRealExample">
+      <h1><span class="propertyWord">Property</span> Live Example:</h1>
+      <h3>- University of Tomas Bata, 20th anniversary:</h3>
+      <div class="universityNewsPapers">
+        This year we are celebrating our 20th anniversary at TBU. Besides other activities and events held on the occasion of this anniversary, an exhibition “Je nám 20” (We Are Twenty), prepared by students and teachers of the Faculty of Multimedia Communications of TBU in Zlín, will form part of the celebrations. The opening preview of the exhibition will be held at 5pm on Wednesday, 20 October 2021 in the University Centre (building U13).
+
+        TBU in Zlín is a young university – open to the world, new ideas and experience. Therefore, students in their twenties studying in the Graphic Design Studio and the Digital Design Studio of the Faculty of Multimedia Communications have been asked to design projects on the occasion of the twentieth anniversary of TBU. Some of them drew inspiration from the history of the University, others drew on their first-hand experience associated with Tomas Bata University.
+        
+        Thus, the final projects depict the development of TBU in Zlín over the twenty years up to the present day, including the establishment of new faculties, construction of new buildings, achievements in research, development and creative activities and many interesting milestones.
+        
+        The exhibition will be on view on the first floor of building U13 in front of the TBU Library every day during the opening hours of the University Centre (náměstí T. G. Masaryka 5555 in Zlín).
+
+      </div>
+    </div>
+
+    <div class="propertySourceCode">
+      <h1><span class="propertyWord">Property</span> Source Code:</h1>
+      <h4>Note that the element used is a div element</h4>
+      <code>
+        .universityNewsPapers {<br>
+          <span style="color:green">/* short hand accepts only column width and count (count represent number of columns) */<br></span>
+          columns: 100px 3 ;<br>
+          column-gap: 20px;<br>
+          column-rule: #25b7d3 3px solid;<br>
+        }
+      </code>
+    </div>
+  </div>
+</body>
+
+</html>
